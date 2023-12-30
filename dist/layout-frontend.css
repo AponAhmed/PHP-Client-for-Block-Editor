@@ -1,0 +1,230 @@
+:root {
+    --gap: 1.5rem;
+}
+
+/* Utility Classes for Area, Direction, and Alignment */
+.area {
+    box-sizing: border-box;
+    margin-bottom: 25px;
+}
+
+.area>div:last-child {
+    margin-bottom: 0;
+}
+
+.area>div.w-50:nth-child(n-2) {
+    display: n;
+    margin-bottom: 0;
+}
+
+.area :last-child {
+    margin-bottom: 0;
+}
+
+.dir-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.dir-row>div:not(:first-child) {
+    margin-left: var(--gap);
+}
+
+.dir-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-justify {
+    text-align: justify;
+}
+
+/* Clearfix for floated elements inside flex containers */
+.dir-row::after,
+.dir-column::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* CSS Utility Classes for Width (5% - 100%) */
+
+/* Set widths in 5% increments */
+.w-10 {
+    width: 10%;
+}
+
+.w-15 {
+    width: 15%;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.w-25 {
+    width: 25%;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-35 {
+    width: 35%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.w-45 {
+    width: 45%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-55 {
+    width: 55%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-65 {
+    width: 65%;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.w-85 {
+    width: 85%;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.w-95 {
+    width: 95%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .tab-column {
+        flex-direction: column;
+    }
+
+    .tab-column>div {
+        width: 100%;
+    }
+
+    .tab-column>div:not(:first-child) {
+        margin-left: 0;
+        margin-top: var(--gap);
+    }
+
+    .tab-grid-2 {
+        display: grid;
+        column-gap: var(--gap);
+        row-gap: var(--gap);
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .tab-grid-3 {
+        display: grid;
+        column-gap: var(--gap);
+        row-gap: var(--gap);
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .tab-grid-2>div,
+    .tab-grid-3>div {
+        margin: 0 !important;
+        width: 100%;
+    }
+}
+
+@media (max-width: 580px) {
+    .dir-row {
+        flex-direction: column;
+    }
+
+    .dir-row>div:not(:first-child) {
+        margin-left: 0;
+        margin-top: var(--gap);
+    }
+
+    .area {
+        width: 100%;
+    }
+
+    .mob-row {
+        flex-direction: row;
+    }
+
+    .mob-row>div:not(:first-child) {
+        margin-left: var(--gap);
+        margin-top: 0;
+    }
+
+    .mob-grid-2 {
+        display: grid;
+        column-gap: var(--gap);
+        row-gap: var(--gap);
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .mob-grid-2>div {
+        margin: 0 !important;
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .area {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .dir-row>div:not(:first-child) {
+        margin-left: 0;
+        margin-top: var(--gap);
+    }
+
+
+    .tab-grid-2,
+    .tab-grid-3,
+    .mob-grid-2,
+    .mob-grid-3 {
+        grid-template-columns: 1fr;
+    }
+}

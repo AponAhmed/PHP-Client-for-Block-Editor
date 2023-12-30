@@ -1,0 +1,44 @@
+# Ignore configuration files
+php.ini
+phpunit.xml
+
+# Ignore user-specific files
+composer.lock
+vendor/
+
+# Ignore generated files
+*.log
+*.sql
+*.sqlite
+*.sqlite3
+*.pdf
+
+# Ignore session files
+sessions/
+
+# Ignore environment-specific files
+.env
+.env.local
+.env.*.php
+.env.*.dist
+.env.*.local
+
+# Ignore IDE and code editor files
+.idea/
+.vscode/
+
+# Ignore system-specific files
+Thumbs.db
+.DS_Store
+
+# Ignore Composer's installed packages directory
+/vendor/
+
+# Ignore local development files
+/public/uploads/
+/public/storage/
+
+# Ignore sensitive or private information
+config/database.php
+config/app.php
+.env.local.php

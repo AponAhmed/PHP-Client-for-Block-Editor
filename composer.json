@@ -1,0 +1,16 @@
+{
+    "name": "aponahmed/metabox-builder",
+    "description": "Custom Metabox Builder for Wordpress",
+    "autoload": {
+        "psr-4": {
+            "Aponahmed\\HtmlBuilder\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "MD. Muhiminul Haque",
+            "email": "apon2041@gmail.com"
+        }
+    ],
+    "require": {}
+}
