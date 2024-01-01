@@ -59,6 +59,10 @@
     clear: both;
 }
 
+.content-area {
+	width: 100%;
+}
+
 /* CSS Utility Classes for Width (5% - 100%) */
 
 /* Set widths in 5% increments */

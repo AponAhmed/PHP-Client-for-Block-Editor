@@ -21,6 +21,9 @@ class ElementFactory
                     }
                 }
                 return $area;
+            case 'Editor':
+                $content = new Content($elementData);
+                return $content;
             case 'Image':
                 return new ImageWP($elementData);
             case 'H':
