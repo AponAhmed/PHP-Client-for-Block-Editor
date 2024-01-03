@@ -3,6 +3,27 @@
 }
 
 /* Utility Classes for Area, Direction, and Alignment */
+
+
+.radius-sm{
+	border-radius: 4px;
+}
+
+.radius-md{
+	border-radius: 1em;
+}
+.radius-50{
+	border-radius: 50px;
+}
+.radius-full{
+	border-radius: 100%;
+}
+
+.align-center {
+	align-items: center;
+	justify-content: center;
+}
+
 .area {
     box-sizing: border-box;
     margin-bottom: 25px;
@@ -175,9 +196,34 @@
         margin: 0 !important;
         width: 100%;
     }
+	.radius-tab-sm{
+		border-radius: 4px;
+	}
+
+	.radius-tab-md{
+		border-radius: 1em;
+	}
+	.radius-tab-50{
+		border-radius: 50px;
+	}
+	.radius-tab-full{
+		border-radius: 100%;
+	}
 }
 
 @media (max-width: 580px) {
+	.radius-mob-sm{
+		border-radius: 4px;
+	}
+	.radius-mob-md{
+		border-radius: 1em;
+	}
+	.radius-mob-50{
+		border-radius: 50px;
+	}
+	.radius-mob-full{
+		border-radius: 100%;
+	}
     .dir-row {
         flex-direction: column;
     }

@@ -25,8 +25,12 @@ class Area extends Element
         if ($this->width) {
             $this->addClass('w-' . $this->width);
         }
+
         if (isset($elementData['more']['customClass'])) {
-            $this->addClass($elementData['more']['customClass']);
+            $customClasses = explode(' ', $elementData['more']['customClass']);
+            foreach ($customClasses as $class) {
+                $this->addClass($class);
+            }
         }
     }
 
@@ -69,8 +73,16 @@ class Area extends Element
 
         $html .= ">";
 
+        if (in_array('align-center', $this->classes)) {
+            $html .= "<div class=\"center-align\">";
+        }
+
         foreach ($this->childs as $child) {
+
             $html .= $child->render($indent + 1);
+        }
+        if (in_array('align-center', $this->classes)) {
+            $html .= "</div>";
         }
 
         $html .= "\n$indentation</div>";
