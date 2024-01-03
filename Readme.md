@@ -4,6 +4,7 @@ The Block Editor PHP Client is a set of PHP classes that facilitate the creation
 
 ## JSON Builder
 Here is the JSON builder for a block editor : [BlockEditor](https://github.com/AponAhmed/BlockEditor)
+A quick preview of JSON Builder [Codepen](https://codepen.io/apon22/full/abXPPyB)
 
 ## Table of Contents
 
