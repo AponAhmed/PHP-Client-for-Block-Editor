@@ -6,13 +6,16 @@
             "Aponahmed\\HtmlBuilder\\": "src/"
         }
     },
+    "license": "MIT",
     "authors": [
         {
             "name": "MD. Muhiminul Haque",
             "email": "apon2041@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "php": "^7.4 || ^8.0"
+    },
     "repositories": [
         {
             "type": "git",
