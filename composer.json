@@ -13,6 +13,8 @@
             "email": "apon2041@gmail.com"
         }
     ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
         "php": "^7.4 || ^8.0"
     },
