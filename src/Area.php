@@ -23,7 +23,7 @@ class Area extends Element
             $this->addClass("dir-" . $this->dir);
         }
         if ($this->width) {
-            $this->addClass('w-' . $this->width);
+            $this->addClass('area-w' . $this->width);
         }
 
         if (isset($elementData['more']['customClass'])) {

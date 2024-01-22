@@ -34,12 +34,32 @@ ol {
 }
 
 /*End Environment */
-
 :root {
     --gap: 1.5rem;
 }
 
 /* Utility Classes for Area, Direction, and Alignment */
+
+
+.radius-sm{
+	border-radius: 4px;
+}
+
+.radius-md{
+	border-radius: 1em;
+}
+.radius-50{
+	border-radius: 50px;
+}
+.radius-full{
+	border-radius: 100%;
+}
+
+.align-center {
+	align-items: center;
+	justify-content: center;
+}
+
 .area {
     box-sizing: border-box;
     margin-bottom: 25px;
@@ -49,7 +69,7 @@ ol {
     margin-bottom: 0;
 }
 
-.area>div.w-50:nth-child(n-2) {
+.area>div.area-w50:nth-child(n-2) {
     display: n;
     margin-bottom: 0;
 }
@@ -96,82 +116,86 @@ ol {
     clear: both;
 }
 
+.content-area {
+	width: 100%;
+}
+
 /* CSS Utility Classes for Width (5% - 100%) */
 
 /* Set widths in 5% increments */
-.w-10 {
+.area-w10 {
     width: 10%;
 }
 
-.w-15 {
+.area-w15 {
     width: 15%;
 }
 
-.w-20 {
+.area-w20 {
     width: 20%;
 }
 
-.w-25 {
+.area-w25 {
     width: 25%;
 }
 
-.w-30 {
+.area-w30 {
     width: 30%;
 }
 
-.w-35 {
+.area-w35 {
     width: 35%;
 }
 
-.w-40 {
+.area-w40 {
     width: 40%;
 }
 
-.w-45 {
+.area-w45 {
     width: 45%;
 }
 
-.w-50 {
+.area-w50 {
     width: 50%;
 }
 
-.w-55 {
+.area-w55 {
     width: 55%;
 }
 
-.w-60 {
+.area-w60 {
     width: 60%;
 }
 
-.w-65 {
+.area-w65 {
     width: 65%;
 }
 
-.w-70 {
+.area-w70 {
     width: 70%;
 }
 
-.w-75 {
+.area-w75 {
     width: 75%;
 }
 
-.w-80 {
+.area-w80 {
     width: 80%;
 }
 
-.w-85 {
+.area-w85 {
     width: 85%;
 }
 
-.w-90 {
+.area-w90 {
     width: 90%;
 }
 
-.w-95 {
+.area-w95 {
     width: 95%;
 }
 
-.w-100 {
+.area-w100 {
     width: 100%;
 }
 
@@ -208,9 +232,34 @@ ol {
         margin: 0 !important;
         width: 100%;
     }
+	.radius-tab-sm{
+		border-radius: 4px;
+	}
+
+	.radius-tab-md{
+		border-radius: 1em;
+	}
+	.radius-tab-50{
+		border-radius: 50px;
+	}
+	.radius-tab-full{
+		border-radius: 100%;
+	}
 }
 
 @media (max-width: 580px) {
+	.radius-mob-sm{
+		border-radius: 4px;
+	}
+	.radius-mob-md{
+		border-radius: 1em;
+	}
+	.radius-mob-50{
+		border-radius: 50px;
+	}
+	.radius-mob-full{
+		border-radius: 100%;
+	}
     .dir-row {
         flex-direction: column;
     }
