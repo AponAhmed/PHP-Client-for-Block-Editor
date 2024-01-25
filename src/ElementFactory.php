@@ -25,7 +25,13 @@ class ElementFactory
                 $content = new Content($elementData);
                 return $content;
             case 'Image':
-                return new ImageWP($elementData);
+                if (file_exists('wp-config.php')) {
+                    return new ImageWP($elementData);
+                } elseif (defined('CMS_STATIC')) {
+                    return new ImageStatic($elementData);
+                } else {
+                    return new Image($elementData);
+                }
             case 'H':
             case 'P':
             case 'li':

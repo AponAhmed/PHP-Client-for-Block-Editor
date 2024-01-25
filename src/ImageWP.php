@@ -12,7 +12,7 @@ class ImageWP extends Image
         parent::__construct($data);
         $this->id = isset($data['id']) ? $data['id'] : false;
         //WP
-        if ($this->id) {
+        if ($this->id && function_exists('wp_get_attachment_image_srcset')) {
             $this->setAttribute('src-set', wp_get_attachment_image_srcset($this->id));
         }
     }
