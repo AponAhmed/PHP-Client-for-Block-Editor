@@ -5,17 +5,17 @@
 /* Utility Classes for Area, Direction, and Alignment */
 
 
-.radius-sm{
+.rounded-sm{
 	border-radius: 4px;
 }
 
-.radius-md{
+.rounded-md{
 	border-radius: 1em;
 }
-.radius-50{
+.rounded-50{
 	border-radius: 50px;
 }
-.radius-full{
+.rounded-full{
 	border-radius: 100%;
 }
 

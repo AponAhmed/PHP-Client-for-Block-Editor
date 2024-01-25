@@ -13,6 +13,7 @@ class Image extends Element
     public function __construct($data)
     {
         parent::__construct('img');
+        
         $this->align = isset($data['align']) ? $data['align'] : '';
         $this->src = isset($data['src']) ? $data['src'] : '';
         $this->width = isset($data['width']) ? $data['width'] : '';
